@@ -30,10 +30,12 @@ FaceRecognition.prototype.start = function(faces) {
  */
 FaceRecognition.prototype.getImageData = function (picture) {
     var canvas = document.createElement("canvas");
+    canvas.setAttribute('height', picture.height);
+    canvas.setAttribute('width', picture.width);
+    
     var context = canvas.getContext('2d');
     context.drawImage(picture, 0, 0);
-    console.log(picture.width);
-    console.log(picture.height);
+    
     return context.getImageData(0, 0, picture.width, picture.height);
 };
 
@@ -41,40 +43,81 @@ FaceRecognition.prototype.getImageData = function (picture) {
  * 
  */
 FaceRecognition.prototype.calculateIntegralImage = function(picture) {
+    // get Image data
     var imageData = this.getImageData(picture);
-    //this.drawImageDataToCanvas(greyScale);
-    
-    var pixels = imageData.data;
-    imageData.data = this.calculateIntegralImageFromRGBA(pixels, picture.width, picture.height);
-    
     this.drawImageDataToCanvas(imageData);
+    
+    // Convert to greyscale
+//    imageData = this.RGBA2Greyscale(imageData);
+//    this.drawImageDataToCanvas(imageData);
+//    
+//    // Calculate the Integral Image array
+//    imageData = this.calculateIntegralImageFromGreyscale(imageData);
+//    
+//    this.drawImageDataToCanvas(imageData);
+    
+    
+    //var pixels = imageData.data;
+    //imageData.data = this.calculateIntegralImageFromRGBA(pixels, picture.width, picture.height);
+    
+    //this.drawImageDataToCanvas(imageData);
 };
 
 /**
  * Convert the picture to grey scale
- * algorithm: (red + green + blue) / 3
+ * algorithm: Math.round((red + green + blue) / 3)
  */
-FaceRecognition.prototype.RGBA2Greyscale = function (r, g, b, a) {
-    return (r + g + b) / 3;
+FaceRecognition.prototype.RGBA2Greyscale = function (imageData) {
+    var pixels = imageData.data;
+    
+    // Convert to grayscale
+    for (var i = 0; i < pixels.length; i += 4) {
+        var greyScale = Math.round((pixels[i + 0] + pixels[i + 1] + pixels[i + 2]) / 3);
+        pixels[i + 0] = greyScale;
+        pixels[i + 1] = greyScale;
+        pixels[i + 2] = greyScale;
+        pixels[i + 3] = pixels[i + 3];
+    }
+    
+    // Set the new data of the pixels
+    imageData.data = pixels;
+    
+    return imageData;
 };
 
-FaceRecognition.prototype.calculateIntegralImageFromRGBA = function(pixels, width, height) {    
-    var red = [];
-    var green = [];
-    var blue = [];
-    var alpha = [];
+/**
+ * Calculates the integral image from the greyscale values, returns 1 pixel  (the red pixel array convert to integral image)
+ */
+FaceRecognition.prototype.calculateIntegralImageFromGreyscale = function(imageData) {    
+    var pixels = imageData.data;
+    var width = imageData.width;
+    var height = imageData.height;
+    
+    var pixel = [];
     
     // Create the pixel value arrays
     for (var i = 0; i < pixels.length; i += 4) {
-        red.push(pixels[i + 0])
-        green.push(pixels[i + 1])
-        blue.push(pixels[i + 2])
-        alpha.push(pixels[i + 3])
+        pixel.push(pixels[i + 0]);
     }
     
-    this.calculateSummedAreaTableByArray(red);
+    // Convert the pixels to integral image
+    pixel = this.calculateSummedAreaTableByArray(pixel, width, height);
     
-    return pixels;
+     // Change the pixels
+    var j = 0;
+    for (var i = 0; i < pixels.length; i += 4) {
+        pixels[i + 0] = pixel[i / 4];
+        pixels[i + 1] = pixel[i / 4];
+        pixels[i + 2] = pixel[i / 4];
+        
+        j++;
+    }
+    
+    console.log(pixel);
+    console.log(pixels);
+    imageData.data = pixels;
+    
+    return imageData;
 };
 
 /**
@@ -129,7 +172,7 @@ FaceRecognition.prototype.calculateSummedAreaTableByArray = function(array, widt
         }
     }
     
-    return result;
+    return this.convert2DArrayTo1D(result, width, height);
 };
 
 /**
@@ -170,8 +213,8 @@ FaceRecognition.prototype.convert2DArrayTo1D = function (array, width, height) {
 FaceRecognition.prototype.drawImageDataToCanvas = function(imgData) {
     var canvas = document.createElement("canvas");
     var context = canvas.getContext('2d');
-    canvas.setAttribute('height', 512);
-    canvas.setAttribute('width', 512);
+    canvas.setAttribute('height', imgData.height);
+    canvas.setAttribute('width', imgData.width);
     context.putImageData(imgData, 0, 0);
     document.body.appendChild(canvas);
 };
