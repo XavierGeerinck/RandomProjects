@@ -48,13 +48,11 @@ FaceRecognition.prototype.calculateIntegralImage = function(picture) {
     this.drawImageDataToCanvas(imageData);
     
     // Convert to greyscale
-//    imageData = this.RGBA2Greyscale(imageData);
-//    this.drawImageDataToCanvas(imageData);
-//    
-//    // Calculate the Integral Image array
-//    imageData = this.calculateIntegralImageFromGreyscale(imageData);
-//    
-//    this.drawImageDataToCanvas(imageData);
+    imageData = this.RGBA2Greyscale(imageData);
+    this.drawImageDataToCanvas(imageData);
+    
+    // Calculate the Integral Image array
+    var integralImage = this.calculateIntegralImageFromGreyscale(imageData);
     
     
     //var pixels = imageData.data;
@@ -65,14 +63,15 @@ FaceRecognition.prototype.calculateIntegralImage = function(picture) {
 
 /**
  * Convert the picture to grey scale
- * algorithm: Math.round((red + green + blue) / 3)
+ * algorithm:
+ * red * 0.3 + green * 0.59 + blue * 0.11
  */
 FaceRecognition.prototype.RGBA2Greyscale = function (imageData) {
     var pixels = imageData.data;
     
     // Convert to grayscale
     for (var i = 0; i < pixels.length; i += 4) {
-        var greyScale = Math.round((pixels[i + 0] + pixels[i + 1] + pixels[i + 2]) / 3);
+        var greyScale = pixels[i + 0] * 0.3 + pixels[i + 1] * 0.59 + pixels[i + 2] * 0.11
         pixels[i + 0] = greyScale;
         pixels[i + 1] = greyScale;
         pixels[i + 2] = greyScale;
@@ -86,7 +85,8 @@ FaceRecognition.prototype.RGBA2Greyscale = function (imageData) {
 };
 
 /**
- * Calculates the integral image from the greyscale values, returns 1 pixel  (the red pixel array convert to integral image)
+ * Calculates the integral image from the greyscale values
+ * Returns array with the values from 1 color (black, white) so no 4 subpixels / pixel!
  */
 FaceRecognition.prototype.calculateIntegralImageFromGreyscale = function(imageData) {    
     var pixels = imageData.data;
@@ -113,8 +113,6 @@ FaceRecognition.prototype.calculateIntegralImageFromGreyscale = function(imageDa
         j++;
     }
     
-    console.log(pixel);
-    console.log(pixels);
     imageData.data = pixels;
     
     return imageData;
