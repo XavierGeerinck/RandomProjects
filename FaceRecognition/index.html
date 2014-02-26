@@ -15,6 +15,7 @@
     <script src="./js/FaceRecognition.js" type="text/javascript"></script>
     <script type="text/javascript">
         var imageLoader = new ImageLoader('./img/faces', 2, 'pic00000', 'jpg', 'faces');
-        var faceRecognition = new FaceRecognition();
+        var faceRecognition = new FaceRecognition('./js/haar_cascades/face.json');
+        faceRecognition.loadHaarCascade();
     </script>
 </html>

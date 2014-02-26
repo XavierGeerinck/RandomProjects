@@ -1,12 +1,51 @@
-var FaceRecognition = function () {
+var FaceRecognition = function (haarCascadeUrl) {
     this.faces = [];
+    this.haar_cascade_location = haarCascadeUrl;
+    this.haar_cascade = null;
 };
 
 FaceRecognition.prototype.start = function(faces) {
     this.faces = faces;
     
     for (var i in faces) {
-        var integralImage = this.calculateIntegralImage(faces[i]);
+        var imageData = this.getImageData(faces[i]);
+        this.RGBA2Greyscale(imageData);
+        this.drawImageDataToCanvas(imageData); // TEST
+        var integralImage = this.calculateIntegralImageFromGreyscale(imageData);
+        this.detectObjects(imageData, integralImage);
+    }
+};
+
+FaceRecognition.prototype.loadHaarCascade = function () {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", this.haar_cascade_location, false); // false gets it synch
+    xhr.send();
+    
+    this.haar_cascade = JSON.parse(xhr.responseText);
+    console.log(this.haar_cascade);
+};
+
+FaceRecognition.prototype.detectObjects = function(imageData, integralImage) {
+    var scanBoxWidth = this.haar_cascade.width;
+    var scanBoxHeight = this.haar_cascade.height;
+    
+    var canvas = this.drawImageDataToCanvas(imageData); // TEST
+    var context = canvas.getContext('2d');
+    
+    // Loop over the width and height of the picture in boxes of the scanBoxHeight and scanBoxWidth
+    for (var y = 0; y < Math.round(imageData.height / scanBoxHeight); y++) {
+        for (var x = 0; x < Math.round(imageData.width / scanBoxWidth); x++) {
+            var x1 = x * scanBoxWidth;
+            var y1 = y * scanBoxHeight;
+            var x2 = x1 + scanBoxWidth;
+            var y2 = y1 + scanBoxHeight;
+            
+            // Loop through the stages, if a stage matches continue to the next stage, else continue to the next box
+            for (var stageCount = 0; stageCount < this.haar_cascade.stage_classifier.length; stageCount++) {
+                //console.log("Stage: " + (stageCount + 1) + " / " + this.haar_cascade.stage_classifier.length);
+            }
+            //console.log("X: " + x + " Y: " + y);
+        }
     }
 };
 
@@ -39,27 +78,6 @@ FaceRecognition.prototype.getImageData = function (picture) {
     return context.getImageData(0, 0, picture.width, picture.height);
 };
 
-/**
- * 
- */
-FaceRecognition.prototype.calculateIntegralImage = function(picture) {
-    // get Image data
-    var imageData = this.getImageData(picture);
-    this.drawImageDataToCanvas(imageData);
-    
-    // Convert to greyscale
-    imageData = this.RGBA2Greyscale(imageData);
-    this.drawImageDataToCanvas(imageData);
-    
-    // Calculate the Integral Image array
-    var integralImage = this.calculateIntegralImageFromGreyscale(imageData);
-    
-    
-    //var pixels = imageData.data;
-    //imageData.data = this.calculateIntegralImageFromRGBA(pixels, picture.width, picture.height);
-    
-    //this.drawImageDataToCanvas(imageData);
-};
 
 /**
  * Convert the picture to grey scale
@@ -80,8 +98,6 @@ FaceRecognition.prototype.RGBA2Greyscale = function (imageData) {
     
     // Set the new data of the pixels
     imageData.data = pixels;
-    
-    return imageData;
 };
 
 /**
@@ -89,9 +105,10 @@ FaceRecognition.prototype.RGBA2Greyscale = function (imageData) {
  * Returns array with the values from 1 color (black, white) so no 4 subpixels / pixel!
  */
 FaceRecognition.prototype.calculateIntegralImageFromGreyscale = function(imageData) {    
-    var pixels = imageData.data;
-    var width = imageData.width;
-    var height = imageData.height;
+    var integralImage = imageData;
+    var pixels = integralImage.data;
+    var width = integralImage.width;
+    var height = integralImage.height;
     
     var pixel = [];
     
@@ -104,18 +121,13 @@ FaceRecognition.prototype.calculateIntegralImageFromGreyscale = function(imageDa
     pixel = this.calculateSummedAreaTableByArray(pixel, width, height);
     
      // Change the pixels
-    var j = 0;
     for (var i = 0; i < pixels.length; i += 4) {
-        pixels[i + 0] = pixel[i / 4];
-        pixels[i + 1] = pixel[i / 4];
-        pixels[i + 2] = pixel[i / 4];
-        
-        j++;
+        integralImage[i + 0] = pixel[i / 4];
+        integralImage[i + 1] = pixel[i / 4];
+        integralImage[i + 2] = pixel[i / 4];
     }
     
-    imageData.data = pixels;
-    
-    return imageData;
+    return integralImage;
 };
 
 /**
@@ -215,4 +227,6 @@ FaceRecognition.prototype.drawImageDataToCanvas = function(imgData) {
     canvas.setAttribute('width', imgData.width);
     context.putImageData(imgData, 0, 0);
     document.body.appendChild(canvas);
+    
+    return canvas;
 };
