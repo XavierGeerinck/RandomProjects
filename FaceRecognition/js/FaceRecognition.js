@@ -1,19 +1,59 @@
-var FaceRecognition = function (haarCascadeUrl) {
+var FaceRecognition = function (haarCascadeUrl, ccv) {
     this.faces = [];
     this.haar_cascade_location = haarCascadeUrl;
     this.haar_cascade = null;
+    this.ccv = ccv;
 };
 
 FaceRecognition.prototype.start = function(faces) {
     this.faces = faces;
     
     for (var i in faces) {
-        var imageData = this.getImageData(faces[i]);
-        this.RGBA2Greyscale(imageData);
-        this.drawImageDataToCanvas(imageData); // TEST
-        var integralImage = this.calculateIntegralImageFromGreyscale(imageData);
-        this.detectObjects(imageData, integralImage);
+        //var imageData = this.getImageData(faces[i]);
+        //this.RGBA2Greyscale(imageData);
+        //var integralImage = this.calculateIntegralImageFromGreyscale(imageData);
+        this.ccvDetectObjects(faces[i]);
+        //this.detectObjects(imageData, integralImage);
     }
+};
+
+FaceRecognition.prototype.ccvDetectObjects= function(image) {
+    var fileName = image.src.substring(image.src.lastIndexOf('/') + 1);
+    var fileName = fileName.substring(0, fileName.length - 4); // Remove .jpg
+    
+    console.log(fileName);
+    
+    this.ccv.detect_objects(
+        { 
+            "canvas" : this.ccv.grayscale(this.ccv.pre(image)),
+            "cascade" : this.haar_cascade,
+            "interval" : 5,
+            "min_neighbors" : 1,
+            "async" : true,
+            "worker" : 1 
+        }
+    )(function (comp) {
+        var canvas = document.getElementById(fileName);
+        var context = canvas.getContext('2d');
+        var scale = 1;
+        //document.getElementById("num-faces").innerHTML = comp.length.toString();
+        //document.getElementById("detection-time").innerHTML = Math.round((new Date()).getTime() - elapsed_time).toString() + "ms";
+        context.lineWidth = 2;
+        context.strokeStyle = 'rgba(230,87,0,0.8)';
+        /* draw detected area */
+        for (var i = 0; i < comp.length; i++) {
+            var x = comp[i].x * scale;
+            var y = comp[i].y * scale;
+            var width = comp[i].width;
+            var height = comp[i].height;
+            
+            context.beginPath();
+            context.rect(x, y, width, height);
+            context.lineWidth = 5;
+            context.strokeStyle = 'red';
+            context.stroke();
+        }    
+    });    
 };
 
 FaceRecognition.prototype.loadHaarCascade = function () {

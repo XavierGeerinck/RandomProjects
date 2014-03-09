@@ -9,10 +9,10 @@
     margin: 5px;
 }
 
-/*#faces li img {
-    width: 64px;
-    height: 64px;
-}*/
+#faces li canvas {
+    width: 128px;
+    height: 128px;
+}
 
 #faces li img {
     width: 512px;

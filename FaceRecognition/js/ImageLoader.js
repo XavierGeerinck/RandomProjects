@@ -25,9 +25,20 @@ ImageLoader.prototype.load = function () {
 };
 
 ImageLoader.prototype.addListItem = function(image) {
+    var fileName = image.src.substring(image.src.lastIndexOf('/') + 1);
+    var fileName = fileName.substring(0, fileName.length - 4); // Remove .jpg
+    
     var listItem = document.createElement('li');
-    listItem.innerHTML = '<img src="' + image.src + '" />';
+    var canvas = document.createElement('canvas');
+    canvas.setAttribute('id', fileName);
+    canvas.setAttribute('height', image.height);
+    canvas.setAttribute('width', image.width);
+    
+    listItem.appendChild(canvas);
     document.querySelector("#faces").appendChild(listItem);
+    
+    var context = canvas.getContext('2d');
+    context.drawImage(image, 0, 0);
 };
 
 ImageLoader.prototype.applyMask = function(number) {
