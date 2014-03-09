@@ -12,16 +12,79 @@ FaceRecognition.prototype.start = function(faces) {
         //var imageData = this.getImageData(faces[i]);
         //this.RGBA2Greyscale(imageData);
         //var integralImage = this.calculateIntegralImageFromGreyscale(imageData);
-        this.ccvDetectObjects(faces[i]);
         //this.detectObjects(imageData, integralImage);
+        
+        this.ccvDetectObjects(faces[i]);  
     }
 };
 
-FaceRecognition.prototype.ccvDetectObjects= function(image) {
-    var fileName = image.src.substring(image.src.lastIndexOf('/') + 1);
-    var fileName = fileName.substring(0, fileName.length - 4); // Remove .jpg
+FaceRecognition.prototype.startWebRTC = function() {
+    // Create canvas and webcam video stream
+    this.webcam = document.createElement('video');
+    this.webcam.setAttribute('id', 'webcam');
+    this.webcam.setAttribute('height', 512);
+    this.webcam.setAttribute('width', 512);
+    this.webcam.setAttribute('autoplay', 512);
     
-    console.log(fileName);
+    var canvas = document.createElement('canvas');
+    canvas.setAttribute('id', 'canvas');
+    canvas.setAttribute('height', 512);
+    canvas.setAttribute('width', 512);
+    
+    document.body.appendChild(this.webcam);
+    document.body.appendChild(canvas);
+    
+    // get user media
+    var navigator = window.navigator;
+    navigator.getMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
+    
+    var self = this;
+    this.counter = 0;
+    
+    // Get the webcam
+    navigator.getMedia({ video: true }, function (localMediaStream) {
+        self.webcam.src = window.URL.createObjectURL(localMediaStream);  
+        
+        // Start processing
+        self.renderVideo();
+    });
+};
+
+FaceRecognition.prototype.renderVideo = function() {
+    var canvas = document.getElementById('canvas');
+    var ctx = canvas.getContext('2d');
+    var self = this;
+    
+    // Draw the video
+    ctx.drawImage(this.webcam, 0, 0, this.webcam.width, this.webcam.height);
+    
+    var frame = ctx.getImageData(0, 0, this.webcam.width, this.webcam.height);
+    var img = new Image();
+    img.src = canvas.toDataURL("image/jpg", 0.8);
+    img.onload = function() {
+        self.ccvDetectObjects(img, 'canvas', canvas, ctx, function () {
+            var imgData = ctx.getImageData(0, 0, img.width, img.height);
+            ctx.putImageData(imgData, img.width, img.height);
+
+            // Recall
+            setTimeout(function () { self.renderVideo() }, 1000 / 60);     
+        });    
+    };
+};
+
+FaceRecognition.prototype.ccvDetectObjects= function(image, fileName, canvas, ctx, callback) {
+    if (!fileName) {
+        fileName = image.src.substring(image.src.lastIndexOf('/') + 1);
+        fileName = fileName.substring(0, fileName.length - 4); // Remove .jpg
+    }
+    
+    if (!canvas) {
+        canvas = document.getElementById(fileName);
+    }
+    
+    if (!ctx) {
+        ctx = canvas.getContext('2d');    
+    }
     
     this.ccv.detect_objects(
         { 
@@ -33,13 +96,9 @@ FaceRecognition.prototype.ccvDetectObjects= function(image) {
             "worker" : 1 
         }
     )(function (comp) {
-        var canvas = document.getElementById(fileName);
-        var context = canvas.getContext('2d');
+        console.log(comp);
         var scale = 1;
-        //document.getElementById("num-faces").innerHTML = comp.length.toString();
-        //document.getElementById("detection-time").innerHTML = Math.round((new Date()).getTime() - elapsed_time).toString() + "ms";
-        context.lineWidth = 2;
-        context.strokeStyle = 'rgba(230,87,0,0.8)';
+
         /* draw detected area */
         for (var i = 0; i < comp.length; i++) {
             var x = comp[i].x * scale;
@@ -47,12 +106,15 @@ FaceRecognition.prototype.ccvDetectObjects= function(image) {
             var width = comp[i].width;
             var height = comp[i].height;
             
-            context.beginPath();
-            context.rect(x, y, width, height);
-            context.lineWidth = 5;
-            context.strokeStyle = 'red';
-            context.stroke();
+            ctx.beginPath();
+            ctx.rect(x, y, width, height);
+            ctx.lineWidth = 5;
+            ctx.strokeStyle = 'red';
+            ctx.stroke();
+            ctx.closePath();
         }    
+        
+        if (callback) callback();
     });    
 };
 
@@ -62,7 +124,6 @@ FaceRecognition.prototype.loadHaarCascade = function () {
     xhr.send();
     
     this.haar_cascade = JSON.parse(xhr.responseText);
-    console.log(this.haar_cascade);
 };
 
 FaceRecognition.prototype.detectObjects = function(imageData, integralImage) {
