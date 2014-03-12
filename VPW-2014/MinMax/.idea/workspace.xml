@@ -5,7 +5,7 @@
     <ignored path="MinMax.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/README.txt" changelist="3f1f8384-d30f-4df4-8be1-3d23edd14cd1" time="1394642848281" ignored="false" />
-    <file path="/Main.java" changelist="3f1f8384-d30f-4df4-8be1-3d23edd14cd1" time="1394642821468" ignored="false" />
+    <file path="/Main.java" changelist="3f1f8384-d30f-4df4-8be1-3d23edd14cd1" time="1394644660658" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,10 +66,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="274" vertical-scroll-proportion="0.0">
+            <state line="41" column="58" selection-start="1538" selection-end="1538" vertical-scroll-proportion="0.7226792">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#732#741#0" expanded="true" />
@@ -80,10 +80,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.txt" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="27" selection-start="1144" selection-end="1144" vertical-scroll-proportion="0.7226792">
+            <state line="32" column="18" selection-start="888" selection-end="888" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -119,8 +119,8 @@
       <list>
         <option value="$PROJECT_DIR$/STDIN.txt" />
         <option value="$PROJECT_DIR$/STDOUT.txt" />
-        <option value="$PROJECT_DIR$/Main.java" />
         <option value="$PROJECT_DIR$/README.txt" />
+        <option value="$PROJECT_DIR$/Main.java" />
       </list>
     </option>
   </component>
@@ -404,22 +404,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="18" selection-start="888" selection-end="888" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="274" vertical-scroll-proportion="0.0">
+        <state line="41" column="58" selection-start="1538" selection-end="1538" vertical-scroll-proportion="0.7226792">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#732#741#0" expanded="true" />
             <element signature="e#1013#1244#0" expanded="true" />
             <element signature="e#1225#1226#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="27" selection-start="1144" selection-end="1144" vertical-scroll-proportion="0.7226792">
-          <folding />
         </state>
       </provider>
     </entry>

@@ -36,9 +36,9 @@ class Main {
 
                 // Print
                 System.out.print("" + (i + 1)); // Guidance number
-                for (int j = 0; j < numbers.size(); j++) {
-                    System.out.print(" " + numbers.get(j));
-                }
+                System.out.print(" " + numbers.get(0));  // Print Min
+                System.out.print(" " + numbers.get(numbers.size() - 1));  // Print Max
+
                 System.out.printf("\n");
             }
         } catch (FileNotFoundException e) {
