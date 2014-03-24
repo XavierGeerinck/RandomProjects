@@ -1,0 +1,17 @@
+2
+2
+AB
+CD
+2
+AC
+AB
+3
+ABC
+AB
+A
+5
+AAA
+ABB
+ABC
+BBB
+BCC
