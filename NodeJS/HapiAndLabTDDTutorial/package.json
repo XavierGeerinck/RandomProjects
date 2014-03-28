@@ -1,0 +1,16 @@
+{
+  "name": "HapiAndLabTDDTutorial",
+  "version": "0.1.0",
+  "description": "Tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "lab"
+  },
+  "author": "Xavier Geerinck <thebillkidy@gmail.com>",
+  "license": "BSD",
+  "dependencies": {
+    "hapi": "~3.0.2",
+    "lab": "~2.0.2",
+    "sinon": "~1.9.0"
+  }
+}
