@@ -11,6 +11,7 @@
   "dependencies": {
     "hapi": "~3.0.2",
     "lab": "~2.0.2",
-    "sinon": "~1.9.0"
+    "sinon": "~1.9.0",
+    "supertest": "~0.10.0"
   }
 }
