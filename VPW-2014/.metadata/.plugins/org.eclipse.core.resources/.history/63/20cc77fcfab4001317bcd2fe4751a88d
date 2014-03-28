@@ -1,0 +1,50 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
+public class Main {
+	public static void main(String[] args) throws FileNotFoundException {
+		Scanner scanner = new Scanner(new File("./STDIN.txt"));
+		
+		int numberOfTests = scanner.nextInt();
+		scanner.nextLine();
+		
+		processTests(scanner, numberOfTests);
+	}
+
+	private static void processTests(Scanner scanner, int numberOfTests) {
+		for (int i = 0; i < numberOfTests; i++) {
+			int aantalLoketten = scanner.nextInt();
+			scanner.nextLine();
+			
+			int aantalBurgers = scanner.nextInt();
+			scanner.nextLine();
+			
+			System.out.println("Aant Loketten: " + aantalLoketten);
+			System.out.println("Aant Burgers: " + aantalBurgers);
+			
+			for (int burgerNummer = 0; burgerNummer < aantalBurgers; burgerNummer++) {
+				System.out.println("BurgerNumber: " + burgerNummer);
+				
+				int binnenkomstUur = scanner.nextInt();
+				int binnenkomstMinuut = scanner.nextInt();
+				scanner.nextLine();
+				
+				int aantalMinutenNodig = scanner.nextInt();
+				scanner.nextLine();
+				
+				System.out.println("BinnenKomstUur: " + binnenkomstUur);
+				System.out.println("binnenkomstMinuut: " + binnenkomstMinuut);
+				System.out.println("aantalMinutenNodig: " + aantalMinutenNodig);
+			}
+			
+			_processTestCase(i);
+		}
+	}
+
+	private static void _processTestCase(int testNumber) {
+	
+	}
+}

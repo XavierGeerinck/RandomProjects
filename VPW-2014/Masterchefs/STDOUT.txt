@@ -1,0 +1,7 @@
+AC mogelijk
+AB onmogelijk
+AAA mogelijk
+ABB mogelijk
+ABC mogelijk
+BBB onmogelijk
+BCC onmogelijk

@@ -30,7 +30,8 @@ for (var i = 0; i < amountOfLines; i++) {
 }
 
 ## Veel gebruikte libraries
-import java.lang.Integer;
+import java.lang.I
+nteger;
 import java.lang.Object;
 import java.lang.Override;
 import java.lang.System;
