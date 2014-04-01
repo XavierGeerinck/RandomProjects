@@ -1,0 +1,235 @@
+html {
+	padding: 0;
+	margin: 0;
+	background-color: #FEFEFE
+}
+
+body {
+	padding: 20px 50px;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	font-size: 25px;
+}
+
+/*
+	MOBILE
+*/
+@media screen and (min-width: 1200px) {
+	body {
+		padding: 20px 250px !important;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	body {
+		padding: 20px 150px !important;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	header .heading {
+		width: 100%;
+	}
+	
+	header .heading .name {
+		margin: 0 !important;	
+		width: 100% !important;
+		text-align: center;
+	}
+	
+	header .heading .title {
+		margin: 0 !important;
+		width: 100% !important;
+		text-align: center;
+	}
+	
+	header .contact {
+		width: 100%;
+		margin: 15px 0 0 0 !important;
+	}
+	
+	.employment .entry {
+		width: 100%;
+		float: none !important;
+	}
+	
+	.employment .entry .container {
+		width: 100% !important;
+		float: none !important;
+	}
+	
+	.employment .entry .year {
+		width: 100% !important;
+		float: none !important;
+	}
+	
+	.bottom_container .education {
+		float: none !important;
+	}
+	
+	.bottom_container .skills {
+		float: none !important;
+	}
+}
+
+/* 
+	Header
+*/
+header {
+	display: block;
+	margin-bottom: 20px;
+}
+
+header .heading {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+header .heading .name {
+	font-size: 30px;
+	margin: 30px 0 0 30px;
+}
+
+header .heading .title {
+	font-size: 15px;
+	margin: 0 0 0 30px;
+}
+
+header .contact {
+	height: 100%;
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+header .contact ul {
+	padding: 0;
+	margin: 15px 15px 0 0;
+	list-style: none;
+}
+
+header .contact ul li {
+	color: #333;
+	padding: 2px 0 2px 0;
+}
+
+header .contact ul li a {
+	color: #333;
+	text-decoration: none;
+}
+
+header .contact ul li i {
+	margin-right: 10px;
+}
+
+/* 
+	Employment
+*/
+.employment {
+}
+
+.employment .entry {
+	display: block;
+}
+
+.employment .entry .year {
+	float: left;
+	width: 27%;
+	color: #555;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.employment .entry .container {
+	float: right;
+	width: 73%;
+}
+
+.employment .entry .title {
+	font-weight: 700;
+	font-size: 18px;
+	color: #333;
+}
+
+.employment .entry .company {
+	font-weight: 600;
+	color: #222;
+	font-size: 17px;
+}
+
+.employment .entry .description {
+	font-size: 15px;
+}
+
+/* 
+	Education
+*/
+.bottom_container {
+	margin-top: 15px;
+	width: 100%;
+}
+
+.bottom_container .education {
+	float: left;
+}
+
+.bottom_container .education .entry {
+}
+
+.bottom_container .education .entry .graduation_year {
+	float: left;
+	margin-right: 10px;
+	color: #333;
+	font-weight: 600;
+}
+
+.bottom_container .education .entry .details_container {
+	float: right;
+}
+
+.bottom_container .education .entry .details_container .degree {
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.bottom_container .education .entry .details_container .school_name {
+}
+
+.bottom_container .education .entry .details_container .location {
+}
+
+/*
+	Bottom Container
+*/
+.bottom_container .skills {
+	float: right;
+}
+
+.bottom_container .skills .entry {
+}
+
+.bottom_container .skills .entry div {
+	padding: 0;
+	margin: 0;
+}
+
+.bottom_container .skills .entry .name {
+	float: left;
+	margin-right: 10px;
+}
+
+.bottom_container .skills .entry .rating {
+	float: right;
+}
+
+/*
+	Skills
+*/
+
+.clear {
+	clear: both;
+}
