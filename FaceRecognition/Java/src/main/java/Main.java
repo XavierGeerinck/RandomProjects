@@ -1,3 +1,4 @@
+import com.desple.model.ImageProcessing;
 import com.desple.view.ShowImage;
 
 public class Main {
@@ -12,6 +13,7 @@ public class Main {
     }
 
     private static void _createAndShowGUI() {
-        new ShowImage();
+        ImageProcessing imageProcessing = new ImageProcessing();
+        ShowImage view = new ShowImage(imageProcessing);
     }
 }

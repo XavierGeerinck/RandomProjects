@@ -1,5 +1,7 @@
 package com.desple.view;
 
+import com.desple.model.ImageProcessing;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
@@ -14,10 +16,15 @@ public class ShowImage extends JFrame {
     private static final int WIDTH = 512;
     private static final int HEIGHT = 512 + 50; // the 50 is for the buttons
 
+    private ImageProcessing modelImageProcessing;
+
     private ImageCanvas canvas;
     private JButton btnLoadImage;
+    private JButton btnStart;
 
-    public ShowImage() {
+    public ShowImage(ImageProcessing modelImageProcessing) {
+        this.modelImageProcessing = modelImageProcessing;
+
         // Set BoxLayout
         Container contentPane = this.getContentPane();
         contentPane.setLayout(new BoxLayout(contentPane, BoxLayout.PAGE_AXIS));
@@ -32,6 +39,14 @@ public class ShowImage extends JFrame {
     }
 
     private void _initComponents() {
+        btnStart = new JButton("Start");
+        btnStart.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                _process();
+            }
+        });
+
         btnLoadImage = new JButton("Load Image");
         btnLoadImage.addActionListener(new ActionListener() {
             @Override
@@ -51,6 +66,11 @@ public class ShowImage extends JFrame {
     private void _addComponents() {
         Container contentPane = this.getContentPane();
         contentPane.add(btnLoadImage);
+        contentPane.add(btnStart);
         contentPane.add(canvas);
+    }
+
+    private void _process() {
+        canvas.setImage(modelImageProcessing.convertToGrayscale(canvas.getImage()));
     }
 }

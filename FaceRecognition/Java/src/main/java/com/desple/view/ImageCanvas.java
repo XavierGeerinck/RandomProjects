@@ -30,4 +30,13 @@ public class ImageCanvas extends JPanel {
         this.image = ImageIO.read(new File(imageLocation));
         repaint();
     }
+
+    public BufferedImage getImage() {
+        return this.image;
+    }
+
+    public void setImage(BufferedImage image) {
+        this.image = image;
+        repaint();
+    }
 }
