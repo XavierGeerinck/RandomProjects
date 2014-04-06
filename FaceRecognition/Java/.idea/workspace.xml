@@ -64,34 +64,70 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="ImageProcessing.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/controller/ImageProcessing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="18" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+            <state line="29" column="9" selection-start="1047" selection-end="1047" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShowImage.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/view/ShowImage.java">
+      <file leaf-file-name="Cascade.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/structure/Cascade.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="89" selection-start="2265" selection-end="2265" vertical-scroll-proportion="0.0" vertical-offset="760" max-vertical-offset="1230">
+            <state line="33" column="21" selection-start="770" selection-end="770" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="2100">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1213#1366#0" expanded="true" />
-                <element signature="e#1355#1356#0" expanded="true" />
-                <element signature="e#1459#1899#0" expanded="true" />
-                <element signature="e#1888#1889#0" expanded="true" />
+                <element signature="e#1497#1498#0" expanded="true" />
+                <element signature="e#1526#1527#0" expanded="true" />
+                <element signature="e#1570#1571#0" expanded="true" />
+                <element signature="e#1606#1607#0" expanded="true" />
+                <element signature="e#1645#1646#0" expanded="true" />
+                <element signature="e#1677#1678#0" expanded="true" />
+                <element signature="e#1730#1731#0" expanded="true" />
+                <element signature="e#1772#1773#0" expanded="true" />
+                <element signature="e#1815#1816#0" expanded="true" />
+                <element signature="e#1849#1850#0" expanded="true" />
+                <element signature="e#1908#1909#0" expanded="true" />
+                <element signature="e#1954#1955#0" expanded="true" />
+                <element signature="e#1984#1985#0" expanded="true" />
+                <element signature="e#2013#2014#0" expanded="true" />
+                <element signature="e#2054#2055#0" expanded="true" />
+                <element signature="e#2090#2091#0" expanded="true" />
+                <element signature="e#2119#2120#0" expanded="true" />
+                <element signature="e#2147#2148#0" expanded="true" />
+                <element signature="e#2186#2187#0" expanded="true" />
+                <element signature="e#2220#2221#0" expanded="true" />
+                <element signature="e#2263#2264#0" expanded="true" />
+                <element signature="e#2297#2298#0" expanded="true" />
+                <element signature="e#2356#2357#0" expanded="true" />
+                <element signature="e#2402#2403#0" expanded="true" />
+                <element signature="e#2449#2450#0" expanded="true" />
+                <element signature="e#2485#2486#0" expanded="true" />
+                <element signature="e#2550#2551#0" expanded="true" />
+                <element signature="e#2600#2601#0" expanded="true" />
+                <element signature="e#2632#2633#0" expanded="true" />
+                <element signature="e#2663#2664#0" expanded="true" />
+                <element signature="e#2708#2709#0" expanded="true" />
+                <element signature="e#2748#2749#0" expanded="true" />
+                <element signature="e#2786#2787#0" expanded="true" />
+                <element signature="e#2815#2816#0" expanded="true" />
+                <element signature="e#2864#2865#0" expanded="true" />
+                <element signature="e#2900#2901#0" expanded="true" />
+                <element signature="e#2942#2943#0" expanded="true" />
+                <element signature="e#2973#2974#0" expanded="true" />
+                <element signature="e#3028#3029#0" expanded="true" />
+                <element signature="e#3068#3069#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageProcessing.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/ImageProcessing.java">
+      <file leaf-file-name="Stage.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/structure/Stage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="25" selection-start="537" selection-end="537" vertical-scroll-proportion="0.5113636" vertical-offset="0" max-vertical-offset="440">
+            <state line="9" column="13" selection-start="307" selection-end="307" vertical-scroll-proportion="0.3068182" vertical-offset="0" max-vertical-offset="600">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,27 +135,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageCanvas.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/view/ImageCanvas.java">
+      <file leaf-file-name="haarcascade_frontalface_default.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/haar_cascades/haarcascade_frontalface_default.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="18" selection-start="915" selection-end="915" vertical-scroll-proportion="0.0" vertical-offset="265" max-vertical-offset="720">
+            <state line="56" column="38" selection-start="2557" selection-end="2557" vertical-scroll-proportion="0.0" vertical-offset="755" max-vertical-offset="445845">
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#785#786#0" expanded="true" />
-                <element signature="e#818#819#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="55" selection-start="597" selection-end="597" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#302#411#0" expanded="true" />
-                <element signature="e#400#401#0" expanded="true" />
+                <element signature="tag#_#1;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+                <element signature="tag#_#2;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -136,10 +158,43 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/desple/view/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/view/ImageCanvas.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/model/IntegralImage.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/haar_cascades/haarcascade_eye.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/haar_cascades/haarcascade_frontalface_alt.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/haar_cascades/haarcascade_frontalface_alt2.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/haar_cascades/haarcascade_frontalface_alt_tree.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/haar_cascades/haarcascade_fulbody.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/haar_cascades/haarcascade_profileface.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/model/ImageProcessing.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/model/Grayscale.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/com/desple/controller/ImageProcessing.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/haar_feature/structure/StageType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/haar_feature/structure/FeatureType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/haar_feature/structure/StageParams.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/haar_feature/structure/haarCascade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/haar_feature/structure/FeatureParams.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/haar_feature/structure/HaarCascade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/haar_feature/structure/WeakClassifier.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/haar_feature/structure/InternalNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/haar_feature/structure/LeafValue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/haar_feature/structure/Stage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/haar_feature/structure/Feature.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/haar_feature/structure/Rect.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/desple/view/ShowImage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/desple/view/ImageCanvas.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/desple/model/ImageProcessing.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/model/structure/HaarCascade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/model/cascade/Reader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/model/structure/OpencvStorage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/model/structure/Feature.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/model/structure/StageType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/model/structure/FeatureType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/model/structure/Stage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/model/structure/FeatureParams.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/model/structure/StageParams.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/controller/ImageProcessing.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/model/structure/Cascade.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/haar_cascades/haarcascade_frontalface_default.xml" />
       </list>
     </option>
   </component>
@@ -181,7 +236,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -233,6 +287,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haar_cascades" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -309,6 +367,10 @@
               <option name="myItemId" value="desple" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -339,10 +401,113 @@
               <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="structure" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FacialRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="desple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="image_processing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FacialRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="desple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cascade" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FacialRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="desple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -356,6 +521,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
+    <property name="LayoutCode.rearrangeEntriesPlain text" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.desple.haar_feature.structure" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -610,42 +781,44 @@
       <changelist id="0e8b5c9f-3298-4b45-ad1e-c9c5aba354ff" name="Default" comment="" />
       <created>1396687047903</created>
       <updated>1396687047903</updated>
-      <workItem from="1396687051723" duration="4057000" />
+      <workItem from="1396687051723" duration="6661000" />
+      <workItem from="1396792728399" duration="7207000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4057000" />
+    <option name="totallyTimeSpent" value="13868000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="790" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3297568" sideWeight="0.5" order="-1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295129" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3297568" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USERS">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
     </option>
   </component>
@@ -665,6 +838,61 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/view/ShowImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="39" selection-start="2180" selection-end="2180" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/image_processing/IntegralImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="35" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="855">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/image_processing/Grayscale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="47" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="405">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/haar_cascades/haarcascade_frontalface_default.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="35" selection-start="3570" selection-end="3580" vertical-scroll-proportion="0.0" vertical-offset="1170" max-vertical-offset="448575">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/haar_cascades/haarcascade_frontalface_alt.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="101" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="328650">
+          <folding>
+            <element signature="tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#1;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#2;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#3;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#4;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#features#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/cascade/Reader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="41" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="255">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/faces/default_face_512.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -682,26 +910,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/haar_cascades/haarcascade_frontalface_alt2.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="55" selection-start="597" selection-end="597" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#302#411#0" expanded="true" />
-            <element signature="e#400#401#0" expanded="true" />
-          </folding>
+        <state line="19370" column="17" selection-start="683802" selection-end="683802" vertical-scroll-proportion="0.78417265" vertical-offset="290223" max-vertical-offset="290640">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/view/ShowImage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/haar_cascades/haarcascade_fulbody.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="89" selection-start="2265" selection-end="2265" vertical-scroll-proportion="0.0" vertical-offset="760" max-vertical-offset="1230">
+        <state line="15404" column="17" selection-start="605676" selection-end="605676" vertical-scroll-proportion="0.92574257" vertical-offset="230686" max-vertical-offset="231150">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/haar_cascades/haarcascade_eye.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165585">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/haar_cascades/haarcascade_profileface.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8456" column="0" selection-start="488726" selection-end="488726" vertical-scroll-proportion="0.9352518" vertical-offset="825" max-vertical-offset="242445">
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1213#1366#0" expanded="true" />
-            <element signature="e#1355#1356#0" expanded="true" />
-            <element signature="e#1459#1899#0" expanded="true" />
-            <element signature="e#1888#1889#0" expanded="true" />
+            <element signature="tag#_#0;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#1;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#2;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#3;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#4;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#5;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#6;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#7;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#8;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#9;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#10;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#11;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#12;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#13;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#14;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#15;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#16;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#17;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#18;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#19;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#20;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#21;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#22;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#23;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#24;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#25;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -711,15 +970,240 @@
         <state line="39" column="18" selection-start="915" selection-end="915" vertical-scroll-proportion="0.0" vertical-offset="265" max-vertical-offset="720">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/ImageProcessing.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/structure/InternalNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="25" selection-start="537" selection-end="537" vertical-scroll-proportion="0.5113636" vertical-offset="0" max-vertical-offset="440">
+        <state line="15" column="26" selection-start="414" selection-end="414" vertical-scroll-proportion="0.3466872" vertical-offset="0" max-vertical-offset="780">
+          <folding>
+            <element signature="e#433#434#0" expanded="false" />
+            <element signature="e#470#471#0" expanded="false" />
+            <element signature="e#502#503#0" expanded="false" />
+            <element signature="e#531#532#0" expanded="false" />
+            <element signature="e#559#560#0" expanded="false" />
+            <element signature="e#598#599#0" expanded="false" />
+            <element signature="e#632#633#0" expanded="false" />
+            <element signature="e#665#666#0" expanded="false" />
+            <element signature="e#697#698#0" expanded="false" />
+            <element signature="e#744#745#0" expanded="false" />
+            <element signature="e#786#787#0" expanded="false" />
+            <element signature="e#822#823#0" expanded="false" />
+            <element signature="e#854#855#0" expanded="false" />
+            <element signature="e#904#905#0" expanded="false" />
+            <element signature="e#946#947#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/structure/LeafValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="62" selection-start="318" selection-end="318" vertical-scroll-proportion="0.20801233" vertical-offset="0" max-vertical-offset="649">
+          <folding>
+            <element signature="e#352#353#0" expanded="false" />
+            <element signature="e#390#391#0" expanded="false" />
+            <element signature="e#452#453#0" expanded="false" />
+            <element signature="e#506#507#0" expanded="false" />
+            <element signature="e#549#550#0" expanded="false" />
+            <element signature="e#588#589#0" expanded="false" />
+            <element signature="e#652#653#0" expanded="false" />
+            <element signature="e#708#709#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/view/ShowImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="34" selection-start="538" selection-end="538" vertical-scroll-proportion="0.6115108" vertical-offset="30" max-vertical-offset="1050">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/haar_cascades/haarcascade_frontalface_alt.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="20" selection-start="2173" selection-end="2180" vertical-scroll-proportion="0.0" vertical-offset="508" max-vertical-offset="990">
+          <folding>
+            <element signature="tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#1;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#2;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#3;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#4;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#features#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/structure/Rect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="27" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/cascade/Reader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="31" selection-start="425" selection-end="425" vertical-scroll-proportion="-0.18705036" vertical-offset="303" max-vertical-offset="720">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/image_processing/Grayscale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="5" selection-start="628" selection-end="628" vertical-scroll-proportion="0.68345326" vertical-offset="0" max-vertical-offset="417">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/image_processing/IntegralImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="459" selection-end="459" vertical-scroll-proportion="0.037128713" vertical-offset="165" max-vertical-offset="840">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="48" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#359#468#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/structure/WeakClassifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/structure/Feature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="55" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/structure/OpencvStorage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="25" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#467#468#0" expanded="false" />
+            <element signature="e#497#498#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/structure/StageType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="42" selection-start="88" selection-end="88" vertical-scroll-proportion="0.13636364" vertical-offset="0" max-vertical-offset="440">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/structure/FeatureParams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="37" selection-start="305" selection-end="305" vertical-scroll-proportion="0.27272728" vertical-offset="0" max-vertical-offset="440">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/structure/FeatureType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="33" selection-start="176" selection-end="176" vertical-scroll-proportion="0.3068182" vertical-offset="0" max-vertical-offset="440">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/structure/StageParams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="37" selection-start="303" selection-end="303" vertical-scroll-proportion="0.27272728" vertical-offset="0" max-vertical-offset="440">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/controller/ImageProcessing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="9" selection-start="1047" selection-end="1047" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/haar_cascades/haarcascade_frontalface_default.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="38" selection-start="2557" selection-end="2557" vertical-scroll-proportion="0.0" vertical-offset="755" max-vertical-offset="445845">
+          <folding>
+            <element signature="tag#_#1;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+            <element signature="tag#_#2;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/structure/Cascade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="21" selection-start="770" selection-end="770" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="2100">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1497#1498#0" expanded="true" />
+            <element signature="e#1526#1527#0" expanded="true" />
+            <element signature="e#1570#1571#0" expanded="true" />
+            <element signature="e#1606#1607#0" expanded="true" />
+            <element signature="e#1645#1646#0" expanded="true" />
+            <element signature="e#1677#1678#0" expanded="true" />
+            <element signature="e#1730#1731#0" expanded="true" />
+            <element signature="e#1772#1773#0" expanded="true" />
+            <element signature="e#1815#1816#0" expanded="true" />
+            <element signature="e#1849#1850#0" expanded="true" />
+            <element signature="e#1908#1909#0" expanded="true" />
+            <element signature="e#1954#1955#0" expanded="true" />
+            <element signature="e#1984#1985#0" expanded="true" />
+            <element signature="e#2013#2014#0" expanded="true" />
+            <element signature="e#2054#2055#0" expanded="true" />
+            <element signature="e#2090#2091#0" expanded="true" />
+            <element signature="e#2119#2120#0" expanded="true" />
+            <element signature="e#2147#2148#0" expanded="true" />
+            <element signature="e#2186#2187#0" expanded="true" />
+            <element signature="e#2220#2221#0" expanded="true" />
+            <element signature="e#2263#2264#0" expanded="true" />
+            <element signature="e#2297#2298#0" expanded="true" />
+            <element signature="e#2356#2357#0" expanded="true" />
+            <element signature="e#2402#2403#0" expanded="true" />
+            <element signature="e#2449#2450#0" expanded="true" />
+            <element signature="e#2485#2486#0" expanded="true" />
+            <element signature="e#2550#2551#0" expanded="true" />
+            <element signature="e#2600#2601#0" expanded="true" />
+            <element signature="e#2632#2633#0" expanded="true" />
+            <element signature="e#2663#2664#0" expanded="true" />
+            <element signature="e#2708#2709#0" expanded="true" />
+            <element signature="e#2748#2749#0" expanded="true" />
+            <element signature="e#2786#2787#0" expanded="true" />
+            <element signature="e#2815#2816#0" expanded="true" />
+            <element signature="e#2864#2865#0" expanded="true" />
+            <element signature="e#2900#2901#0" expanded="true" />
+            <element signature="e#2942#2943#0" expanded="true" />
+            <element signature="e#2973#2974#0" expanded="true" />
+            <element signature="e#3028#3029#0" expanded="true" />
+            <element signature="e#3068#3069#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/structure/Stage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="307" selection-end="307" vertical-scroll-proportion="0.3068182" vertical-offset="0" max-vertical-offset="600">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -1,14 +1,11 @@
 package com.desple.view;
 
-import com.desple.model.ImageProcessing;
+import com.desple.controller.ImageProcessing;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 
@@ -16,14 +13,14 @@ public class ShowImage extends JFrame {
     private static final int WIDTH = 512;
     private static final int HEIGHT = 512 + 50; // the 50 is for the buttons
 
-    private ImageProcessing modelImageProcessing;
+    private ImageProcessing imageProcessing;
 
     private ImageCanvas canvas;
     private JButton btnLoadImage;
     private JButton btnStart;
 
-    public ShowImage(ImageProcessing modelImageProcessing) {
-        this.modelImageProcessing = modelImageProcessing;
+    public ShowImage(ImageProcessing imageProcessing) {
+        this.imageProcessing = imageProcessing;
 
         // Set BoxLayout
         Container contentPane = this.getContentPane();
@@ -52,10 +49,9 @@ public class ShowImage extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    URL imageLocation = ClassLoader.getSystemResource("faces/default_face_512.jpg");
-                    canvas.loadImage(imageLocation.getFile());
+                    canvas.loadImage(imageProcessing.getImagePath());
                 } catch (IOException e1) {
-                    System.out.println("Could not load the image");
+                    e1.printStackTrace();
                 }
             }
         });
@@ -71,6 +67,6 @@ public class ShowImage extends JFrame {
     }
 
     private void _process() {
-        canvas.setImage(modelImageProcessing.convertToGrayscale(canvas.getImage()));
+        imageProcessing.processImage(this.canvas.getImage());
     }
 }

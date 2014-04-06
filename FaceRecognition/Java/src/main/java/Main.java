@@ -1,4 +1,5 @@
-import com.desple.model.ImageProcessing;
+import com.desple.controller.ImageProcessing;
+import com.desple.model.image_processing.Grayscale;
 import com.desple.view.ShowImage;
 
 public class Main {
