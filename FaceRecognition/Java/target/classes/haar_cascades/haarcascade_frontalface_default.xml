@@ -56,7 +56,7 @@
         </featureParams>
         <stageNum>25</stageNum>
         <stages>
-            <stage>
+            <_>
                 <maxWeakCount>9</maxWeakCount>
                 <stageThreshold>-5.0425500869750977e+00</stageThreshold>
                 <weakClassifiers>
@@ -97,7 +97,7 @@
                         <leafValues>-8.5909199714660645e-01 8.5255599021911621e-01</leafValues>
                     </_>
                 </weakClassifiers>
-            </stage>
+            </_>
             <_>
                 <maxWeakCount>16</maxWeakCount>
                 <stageThreshold>-4.9842400550842285e+00</stageThreshold>

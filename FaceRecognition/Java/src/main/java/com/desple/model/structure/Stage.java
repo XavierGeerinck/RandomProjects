@@ -1,11 +1,9 @@
 package com.desple.model.structure;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.*;
+import java.util.ArrayList;
+import java.util.List;
 
-@XmlRootElement(name="_")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Stage {
     @XmlElement(name="maxWeakCount")
@@ -14,14 +12,15 @@ public class Stage {
     @XmlElement(name="stageThreshold")
     private double stageThreshold;
 
-    @XmlElement(name="weakClassifiers")
-    private WeakClassifier[] weakClassifiers;
+    @XmlElementWrapper(name="weakClassifiers")
+    @XmlElement(name="_")
+    private List<WeakClassifier> weakClassifiers = new ArrayList<>();
 
     public Stage() {
 
     }
 
-    public Stage(int maxWeakCount, double stageThreshold, WeakClassifier[] weakClassifiers) {
+    public Stage(int maxWeakCount, double stageThreshold, List<WeakClassifier> weakClassifiers) {
         this.maxWeakCount = maxWeakCount;
         this.stageThreshold = stageThreshold;
         this.weakClassifiers = weakClassifiers;
@@ -35,7 +34,7 @@ public class Stage {
         return stageThreshold;
     }
 
-    public WeakClassifier[] getWeakClassifiers() {
+    public List<WeakClassifier> getWeakClassifiers() {
         return weakClassifiers;
     }
 }

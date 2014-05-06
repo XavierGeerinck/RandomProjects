@@ -1,6 +1,7 @@
 package com.desple.model.structure;
 
 import javax.xml.bind.annotation.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @XmlRootElement(name="cascade")
@@ -30,11 +31,13 @@ public class Cascade {
     @XmlElement(name="stageNum")
     private int stageNum;
 
-    @XmlElement(name="stages")
-    private List<Stage> stages = null;
+    @XmlElementWrapper(name="stages")
+    @XmlElement(name="_")
+    private List<Stage> stages = new ArrayList<>();
 
-    @XmlElement(name="features")
-    private List<Feature> features = null;
+    @XmlElementWrapper(name="features")
+    @XmlElement(name="_")
+    private List<Feature> features = new ArrayList<>();
 
     public Cascade() {
 

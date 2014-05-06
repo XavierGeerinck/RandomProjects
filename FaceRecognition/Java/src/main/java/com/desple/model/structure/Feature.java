@@ -1,24 +1,24 @@
 package com.desple.model.structure;
 
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.*;
+import java.util.ArrayList;
+import java.util.List;
 
-@XmlRootElement(name="_")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Feature {
-    private Rect[] rectangles;
+    @XmlElementWrapper(name="rects")
+    @XmlElement(name="_")
+    private List<Rect> rectangles = new ArrayList<>();
 
     public Feature() {
 
     }
 
-    public Feature(Rect[] rectangles) {
-        this.rectangles = rectangles;
-    }
-
-    public Rect[] getRectangles() {
+    public List<Rect> getRectangles() {
         return rectangles;
     }
 
-    public void setRectangles(Rect[] rectangles) {
+    public void setRectangles(List<Rect> rectangles) {
         this.rectangles = rectangles;
     }
 }

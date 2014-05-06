@@ -26,10 +26,10 @@ Classes for the different features (2 rectangles, 3 Rectangles, \'85)\
 // Steps Program\
 [DONE] 1. Load image\
 [DONE] 2. Convert image to grayscale\
-3. Load the feature\
-4. Go through the feature it\'92s stages\
-4.1 parse the internalNode\
-4.2 get the rectangles for that feature\
+[DONE] 3. Load the feature\
+[DONE] 4. Go through the feature it\'92s stages\
+[DONE] 4.1 parse the internalNode\
+[DONE] 4.2 get the rectangles for that feature\
 4.3 draw the rectangle\
 4.4 calculate the rectangle it\'92s sum\
 4.5 compare the rectangle it\'92s sum to the threshold\
@@ -43,10 +43,8 @@ If the rectangle sum passes the threshold, then we add the right_value, else we 
 // Structure leafValues\
 \
 // Structure InternalNodes\
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
-\cf0 <internalNodes>0 -1 0 -3.1511999666690826e-02</internalNodes>\
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
-\cf0 <node.left> <node.right> <node.featureIdx> <node.treshold>\
+<internalNodes>0 -1 0 -3.1511999666690826e-02</internalNodes>\
+<node.left> <node.right> <node.featureIdx> <node.treshold>\
 \
 // Structure Rect\
 <_>\
@@ -57,11 +55,12 @@ If the rectangle sum passes the threshold, then we add the right_value, else we 
     </rects>\
 </_>\
 \
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
-\cf0 <x> <y> <width> <height> <weight>\
+<x> <y> <width> <height> <weight>\
 \
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
-\cf0 The first 4 numbers are used for the integral sum array, they get the x and y coordinate with the heights and widths.\
+The first 4 numbers are used for the integral sum array, they get the x and y coordinate with the heights and widths.\
 \
 the last number (-1, 2., 2. in this example) is the weight (used to calculate the feature)\
-float ret = rect[0].weight * CALC_SUM(p[0], _offset) + rect[1].weight * CALC_SUM(p[1], _offset)}
+float ret = rect[0].weight * CALC_SUM(p[0], _offset) + rect[1].weight * CALC_SUM(p[1], _offset)\
+\
+SPEEDUP\
+- Instead of using floating point -> user integer}

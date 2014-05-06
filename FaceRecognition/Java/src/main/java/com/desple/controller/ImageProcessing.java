@@ -1,37 +1,44 @@
 package com.desple.controller;
 
-import com.desple.model.cascade.Reader;
-import com.desple.model.image_processing.Grayscale;
-import com.desple.model.image_processing.IntegralImage;
-import com.desple.model.structure.Cascade;
-import com.desple.model.structure.OpencvStorage;
-import com.desple.model.structure.Stage;
+import com.desple.model.Detector;
+import com.desple.view.ShowImage;
 
-import java.awt.image.BufferedImage;
-import java.net.URL;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.IOException;
 
 public class ImageProcessing {
-    public ImageProcessing() {
+    private ShowImage view;
+    private Detector model;
+
+    private static final String CASCADE_LOCATION = "haar_cascades/haarcascade_frontalface_default.xml";
+    private static final String FILE_LOCATION = ClassLoader.getSystemResource("faces/default_face_512.jpg").getFile();
+
+    public ImageProcessing(ShowImage view, Detector model) {
+        this.view = view;
+        this.model = model;
+
+        this.view.addLoadImageListener(new LoadImageActionListener());
+        this.view.addStartListener(new StartActionListener());
     }
 
-    public void processImage(BufferedImage image) {
-        // Convert image to grayscale
-        image = Grayscale.convertToGrayscale(image);
+    class LoadImageActionListener implements ActionListener {
 
-        // Calculate integral image
-        IntegralImage integralImage = new IntegralImage(image);
-
-        // Load the haar feature
-        URL imageLocation = ClassLoader.getSystemResource("haar_cascades/haarcascade_frontalface_default.xml");
-        OpencvStorage opencvStorage = Reader.readHaarCascade(imageLocation.getFile());
-
-        for (Stage s : opencvStorage.getCascade().getStages()) {
-            System.out.println(s.getMaxWeakCount());
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            try {
+                view.getCanvas().loadImage(FILE_LOCATION);
+            } catch (IOException e1) {
+                e1.printStackTrace();
+            }
         }
     }
 
-    public String getImagePath() {
-        URL imageLocation = ClassLoader.getSystemResource("faces/default_face_512.jpg");
-        return imageLocation.getFile();
+    class StartActionListener implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            model.getFaces(view.getCanvas().getImage(), CASCADE_LOCATION);
+        }
     }
 }

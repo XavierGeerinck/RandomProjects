@@ -1,4 +1,5 @@
 import com.desple.controller.ImageProcessing;
+import com.desple.model.Detector;
 import com.desple.model.image_processing.Grayscale;
 import com.desple.view.ShowImage;
 
@@ -14,7 +15,8 @@ public class Main {
     }
 
     private static void _createAndShowGUI() {
-        ImageProcessing imageProcessing = new ImageProcessing();
-        ShowImage view = new ShowImage(imageProcessing);
+        Detector model = new Detector();
+        ShowImage view = new ShowImage(model);
+        ImageProcessing controller = new ImageProcessing(view, model);
     }
 }

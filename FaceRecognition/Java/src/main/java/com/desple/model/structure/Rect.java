@@ -1,57 +1,50 @@
 package com.desple.model.structure;
 
+import javax.xml.bind.annotation.*;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * 0: xCoord : int
+ * 1: yCoord : int
+ * 2: width  : int
+ * 3: height : int
+ * 4: weight : double
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Rect {
-    private int xCoord;
-    private int yCoord;
-    private int width;
-    private int height;
-    private double weight;
+    @XmlList
+    @XmlValue
+    private List<String> values;
 
-    public Rect(int xCoord, int yCoord, int widht, int height, double weight) {
-        this.xCoord = xCoord;
-        this.yCoord = yCoord;
-        this.width = widht;
-        this.height = height;
-        this.weight = weight;
+    public Rect() {
     }
 
-    public int getxCoord() {
-        return xCoord;
+    public List<String> getValues() {
+        return values;
     }
 
-    public void setxCoord(int xCoord) {
-        this.xCoord = xCoord;
+    public void setValues(List<String> values) {
+        this.values = values;
     }
 
-    public int getyCoord() {
-        return yCoord;
+    public int getXCoord() {
+        return Integer.parseInt(this.values.get(0));
     }
 
-    public void setyCoord(int yCoord) {
-        this.yCoord = yCoord;
+    public int getYCoord() {
+        return Integer.parseInt(this.values.get(1));
     }
 
     public int getWidth() {
-        return width;
-    }
-
-    public void setWidth(int width) {
-        this.width = width;
+        return Integer.parseInt(this.values.get(2));
     }
 
     public int getHeight() {
-        return height;
-    }
-
-    public void setHeight(int height) {
-        this.height = height;
+        return Integer.parseInt(this.values.get(3));
     }
 
     public double getWeight() {
-        return weight;
-    }
-
-    public void setWeight(double weight) {
-        this.weight = weight;
+        return Double.parseDouble(this.values.get(4));
     }
 }
