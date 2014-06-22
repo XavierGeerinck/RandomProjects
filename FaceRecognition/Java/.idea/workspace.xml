@@ -67,7 +67,16 @@
       <file leaf-file-name="Detector.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/Detector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="54" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.35128805" vertical-offset="555" max-vertical-offset="1980">
+            <state line="103" column="31" selection-start="4434" selection-end="4434" vertical-scroll-proportion="0.2739726" vertical-offset="1245" max-vertical-offset="2790">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rect.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/structure/Rect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="15" selection-start="665" selection-end="679" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="960">
               <folding />
             </state>
           </provider>
@@ -76,16 +85,7 @@
       <file leaf-file-name="ImageDetails.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/image_processing/ImageDetails.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="0" selection-start="2330" selection-end="2330" vertical-scroll-proportion="0.0" vertical-offset="859" max-vertical-offset="1575">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageProcessing.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/controller/ImageProcessing.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="26" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
+            <state line="67" column="0" selection-start="2354" selection-end="2354" vertical-scroll-proportion="0.0" vertical-offset="1005" max-vertical-offset="1875">
               <folding />
             </state>
           </provider>
@@ -94,7 +94,16 @@
       <file leaf-file-name="haarcascade_frontalface_default.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/haar_cascades/haarcascade_frontalface_default.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="6" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="448575">
+            <state line="21921" column="34" selection-start="961730" selection-end="961738" vertical-scroll-proportion="0.0" vertical-offset="328677" max-vertical-offset="448575">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageProcessing.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/controller/ImageProcessing.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="87" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="720">
               <folding />
             </state>
           </provider>
@@ -103,7 +112,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="13" selection-start="612" selection-end="612" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="420">
+            <state line="20" column="34" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="450">
               <folding />
             </state>
           </provider>
@@ -155,15 +164,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/desple/model/structure/Stage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/desple/model/structure/Feature.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/desple/model/structure/WeakClassifier.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/desple/model/structure/Rect.java" />
         <option value="$PROJECT_DIR$/Information.rtf" />
         <option value="$PROJECT_DIR$/src/main/java/com/desple/view/ImageCanvas.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/desple/view/PreviewImageCanvas.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/desple/view/ShowImage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/desple/model/image_processing/IntegralImage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/desple/controller/ImageProcessing.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/desple/model/image_processing/ImageDetails.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/desple/model/structure/Rect.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/desple/model/Detector.java" />
       </list>
     </option>
@@ -402,6 +411,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="structure" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FacialRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="desple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="image_processing" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -490,6 +533,7 @@
     <property name="LayoutCode.rearrangeEntriesPlain text" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -756,11 +800,16 @@
       <workItem from="1398094407308" duration="5723000" />
       <workItem from="1398604561921" duration="6306000" />
       <workItem from="1398709731104" duration="2135000" />
+      <workItem from="1400926744690" duration="4456000" />
+      <workItem from="1400931909526" duration="486000" />
+      <workItem from="1400932551827" duration="1290000" />
+      <workItem from="1400943000501" duration="6000" />
+      <workItem from="1401114627592" duration="20000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41540000" />
+    <option name="totallyTimeSpent" value="47798000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="790" extended-state="6" />
@@ -779,40 +828,16 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3297568" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3297568" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295129" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
+    </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -851,16 +876,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/view/ImageCanvas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="10" selection-start="230" selection-end="921" vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="720">
-          <folding />
-        </state>
+        <state line="40" column="10" selection-start="230" selection-end="921" vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="720" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/view/PreviewImageCanvas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="29" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="720">
-          <folding />
-        </state>
+        <state line="12" column="29" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="720" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/view/ShowImage.java">
@@ -956,11 +977,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/image_processing/Grayscale.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="47" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="405">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
+        <state line="15" column="47" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="405" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/haar_cascades/haarcascade_frontalface_default.xml">
@@ -972,25 +989,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/haar_cascades/haarcascade_frontalface_alt.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="101" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="328650">
-          <folding>
-            <element signature="tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#1;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#2;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#3;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#4;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#features#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="4" column="101" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="328650" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/cascade/Reader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="41" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="255">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
+        <state line="8" column="41" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="255" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/faces/default_face_512.jpg">
@@ -1005,64 +1009,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="18" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <folding />
-        </state>
+        <state line="1" column="18" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/haar_cascades/haarcascade_frontalface_alt2.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19370" column="17" selection-start="683802" selection-end="683802" vertical-scroll-proportion="0.78417265" vertical-offset="290223" max-vertical-offset="290640">
-          <folding />
-        </state>
+        <state line="19370" column="17" selection-start="683802" selection-end="683802" vertical-scroll-proportion="0.78417265" vertical-offset="290223" max-vertical-offset="290640" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/haar_cascades/haarcascade_fulbody.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15404" column="17" selection-start="605676" selection-end="605676" vertical-scroll-proportion="0.92574257" vertical-offset="230686" max-vertical-offset="231150">
-          <folding />
-        </state>
+        <state line="15404" column="17" selection-start="605676" selection-end="605676" vertical-scroll-proportion="0.92574257" vertical-offset="230686" max-vertical-offset="231150" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/haar_cascades/haarcascade_eye.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165585">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165585" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/haar_cascades/haarcascade_profileface.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8456" column="0" selection-start="488726" selection-end="488726" vertical-scroll-proportion="0.9352518" vertical-offset="825" max-vertical-offset="242445">
-          <folding>
-            <element signature="tag#_#0;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#1;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#2;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#3;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#4;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#5;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#6;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#7;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#8;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#9;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#10;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#11;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#12;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#13;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#14;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#15;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#16;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#17;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#18;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#19;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#20;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#21;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#22;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#23;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#24;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#25;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="8456" column="0" selection-start="488726" selection-end="488726" vertical-scroll-proportion="0.9352518" vertical-offset="825" max-vertical-offset="242445" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/structure/LeafValue.java">
@@ -1072,25 +1039,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/haar_cascades/haarcascade_frontalface_alt.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="20" selection-start="2173" selection-end="2180" vertical-scroll-proportion="0.0" vertical-offset="508" max-vertical-offset="990">
-          <folding>
-            <element signature="tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#1;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#2;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#3;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#_#4;tag#stages#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-            <element signature="tag#features#0;tag#cascade#0;tag#opencv_storage#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="45" column="20" selection-start="2173" selection-end="2180" vertical-scroll-proportion="0.0" vertical-offset="508" max-vertical-offset="990" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/cascade/Reader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="31" selection-start="425" selection-end="425" vertical-scroll-proportion="-0.18705036" vertical-offset="303" max-vertical-offset="720">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
+        <state line="15" column="31" selection-start="425" selection-end="425" vertical-scroll-proportion="-0.18705036" vertical-offset="303" max-vertical-offset="720" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/structure/OpencvStorage.java">
@@ -1135,11 +1089,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/image_processing/Grayscale.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="5" selection-start="628" selection-end="628" vertical-scroll-proportion="0.68345326" vertical-offset="0" max-vertical-offset="417">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
+        <state line="19" column="5" selection-start="628" selection-end="628" vertical-scroll-proportion="0.68345326" vertical-offset="0" max-vertical-offset="417" />
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/javax/xml/bind/annotation/XmlElement.java">
@@ -1164,16 +1114,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/view/ImageCanvas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="10" selection-start="230" selection-end="921" vertical-scroll-proportion="1.125" vertical-offset="0" max-vertical-offset="615">
-          <folding />
-        </state>
+        <state line="40" column="10" selection-start="230" selection-end="921" vertical-scroll-proportion="1.125" vertical-offset="0" max-vertical-offset="615" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/view/PreviewImageCanvas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="29" selection-start="296" selection-end="296" vertical-scroll-proportion="0.23863636" vertical-offset="0" max-vertical-offset="615">
-          <folding />
-        </state>
+        <state line="12" column="29" selection-start="296" selection-end="296" vertical-scroll-proportion="0.23863636" vertical-offset="0" max-vertical-offset="615" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/view/ShowImage.java">
@@ -1194,42 +1140,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="612" selection-end="612" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/structure/Rect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="15" selection-start="724" selection-end="724" vertical-scroll-proportion="0.38636363" vertical-offset="310" max-vertical-offset="750">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/haar_cascades/haarcascade_frontalface_default.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="6" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="272535">
+        <state line="20" column="34" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/controller/ImageProcessing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="26" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="660">
+        <state line="13" column="87" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/haar_cascades/haarcascade_frontalface_default.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21921" column="34" selection-start="961730" selection-end="961738" vertical-scroll-proportion="0.0" vertical-offset="328677" max-vertical-offset="448575">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/image_processing/ImageDetails.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="0" selection-start="2330" selection-end="2330" vertical-scroll-proportion="0.0" vertical-offset="859" max-vertical-offset="1575">
+        <state line="67" column="0" selection-start="2354" selection-end="2354" vertical-scroll-proportion="0.0" vertical-offset="863" max-vertical-offset="1575">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/structure/Rect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="15" selection-start="665" selection-end="679" vertical-scroll-proportion="0.0" vertical-offset="175" max-vertical-offset="870">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/desple/model/Detector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="54" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.35128805" vertical-offset="555" max-vertical-offset="1980">
+        <state line="103" column="31" selection-start="4434" selection-end="4434" vertical-scroll-proportion="0.2739726" vertical-offset="1245" max-vertical-offset="2790">
           <folding />
         </state>
       </provider>

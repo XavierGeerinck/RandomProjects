@@ -13,9 +13,9 @@ public class ImageDetails {
     public ImageDetails(BufferedImage image) {
         this.width = image.getWidth();
         this.height = image.getHeight();
-        this.greyscaleImage = new int[image.getWidth()][image.getHeight()];
-        this.squaredSummedAreaTable = new int[image.getWidth()][image.getHeight()];
-        this.summedAreaTable = new int[image.getWidth()][image.getHeight()];
+        this.greyscaleImage = new int[image.getWidth() + 1][image.getHeight() + 1];
+        this.squaredSummedAreaTable = new int[image.getWidth() + 1][image.getHeight() + 1];
+        this.summedAreaTable = new int[image.getWidth() + 1][image.getHeight() + 1];
 
         // calculate the details
         _calculateDetails(image);

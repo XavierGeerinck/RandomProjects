@@ -11,8 +11,7 @@ public class ImageProcessing {
     private ShowImage view;
     private Detector model;
 
-    private static final String CASCADE_LOCATION = "haar_cascades/haarcascade_frontalface_default.xml";
-    private static final String FILE_LOCATION = ClassLoader.getSystemResource("faces/default_face_512.jpg").getFile();
+    private static final String FILE_LOCATION = ClassLoader.getSystemResource("faces/lena.jpg").getFile();
 
     public ImageProcessing(ShowImage view, Detector model) {
         this.view = view;
@@ -38,7 +37,7 @@ public class ImageProcessing {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            model.getFaces(view.getCanvas().getImage(), CASCADE_LOCATION);
+            model.getFaces(view.getCanvas().getImage());
         }
     }
 }

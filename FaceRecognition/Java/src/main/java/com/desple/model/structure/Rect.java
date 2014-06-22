@@ -32,8 +32,16 @@ public class Rect {
         return Integer.parseInt(this.values.get(0));
     }
 
+    public int getX2Coord() {
+        return getXCoord() + getWidth(); // X1 + width
+    }
+
     public int getYCoord() {
         return Integer.parseInt(this.values.get(1));
+    }
+
+    public int getY2Coord() {
+        return getYCoord() + getHeight();
     }
 
     public int getWidth() {
