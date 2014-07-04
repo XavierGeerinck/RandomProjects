@@ -1,13 +1,9 @@
-var WebSocketServer = require('ws').Server
-  , wss = new WebSocketServer({ port: 8888 });
+var io = require('socket.io')(8888);
 
-wss.on('connection', function(ws) {
-    ws.on('message', function(message) {
-        wss.broadcast(message);
+io.on('connection', function(socket) {
+    console.log('Client Connected');
+
+    socket.on('message', function(data) {
+        io.sockets.emit('message', data);
     });
 });
-
-wss.broadcast = function(data) {
-    for(var i in this.clients)
-        this.clients[i].send(data);
-};
