@@ -1,0 +1,15 @@
+{
+  "name": "VirtualAssistant",
+  "version": "0.1.0",
+  "description": "Virtual assistant written in javascript on the frontend and node.js on the backend. By using a REST api we are able to ask questions and receive notifications.",
+  "main": "Server/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Xavier Geerinck",
+  "license": "MIT",
+  "dependencies": {
+    "node-schedule": "^0.1.13",
+    "socket.io": "^1.0.6"
+  }
+}
